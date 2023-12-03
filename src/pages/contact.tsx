@@ -129,7 +129,7 @@ const Contact = () => {
             Contact Me
           </h2>
           <div>
-            <h4 className="text-center py-4 text-lg md:text-xl lg:text-2xl heading">I'm excited to engage with you!</h4>
+            <h4 className="text-center py-4 text-lg md:text-xl lg:text-2xl heading">I am excited to engage with you!</h4>
           </div>
           <div className="grid md:grid-cols-2 justify-center items-center relative px-5 md:px-20 letter-image">
             <div className="md:w-1/2 ">

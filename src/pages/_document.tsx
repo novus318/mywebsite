@@ -17,10 +17,21 @@ export default function Document() {
           sizes="32x22"
           href="/logo.webp"
         />
+        
         <meta name="theme-color" content="#cd6242" />
     <meta name="description" content="Self-taught web developer,creates innovative solutions for the web and skilled to build both the frontend and backend components of a web application."/>
     <meta name="keywords" content="nizamudheen,muhammed nizamudheen,muhammed nizamudheen m,web developer,web development,software,software developer,software engineer,mern stack,react,full-stack"/>
     <meta name="author" content="Muhammed Nizamudheen M"/>
+    <meta property="og:title" content="Nizamudheen"/>
+    <meta property="og:description" content="Self-taught web developer, creates innovative solutions for the web and skilled to build both the frontend and backend components of a web application."/>
+    <meta property="og:url" content="https://nizamudheen.tech/"/>
+    <meta property="og:image" content="https://nizamudheen.tech/_next/static/media/nizam1.d882745d.svg"/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:title" content="Nizamudheen"/>
+    <meta name="twitter:description" content="Self-taught web developer, creates innovative solutions for the web and skilled to build both the frontend and backend components of a web application."/>
+    <meta name="twitter:image" content="https://nizamudheen.tech/_next/static/media/nizam1.d882745d.svg"/>
+    <meta name="twitter:url" content="https://nizamudheen.tech/"/>
     <title>Nizamudheen</title>
       <body>
         <Main />
