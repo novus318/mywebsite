@@ -17,7 +17,10 @@ export default function Document() {
           sizes="32x22"
           href="/logo.webp"
         />
-        
+          <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+/>      
         <meta name="theme-color" content="#cd6242" />
     <meta name="description" content="Self-taught web developer,creates innovative solutions for the web and skilled to build both the frontend and backend components of a web application."/>
     <meta name="keywords" content="nizamudheen,muhammed nizamudheen,muhammed nizamudheen m,web developer,web development,software,software developer,software engineer,mern stack,react,full-stack"/>
