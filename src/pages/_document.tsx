@@ -28,12 +28,12 @@ export default function Document() {
     <meta property="og:title" content="Nizamudheen"/>
     <meta property="og:description" content="Self-taught web developer, creates innovative solutions for the web and skilled to build both the frontend and backend components of a web application."/>
     <meta property="og:url" content="https://nizamudheen.tech/"/>
-    <meta property="og:image" content="https://nizamudheen.tech/_next/static/media/nizam1.d882745d.svg"/>
+    <meta property="og:image" content="https://nizamudheen.tech/nizam3.png"/>
     <meta property="og:type" content="website"/>
 
     <meta name="twitter:title" content="Nizamudheen"/>
     <meta name="twitter:description" content="Self-taught web developer, creates innovative solutions for the web and skilled to build both the frontend and backend components of a web application."/>
-    <meta name="twitter:image" content="https://nizamudheen.tech/_next/static/media/nizam1.d882745d.svg"/>
+    <meta name="twitter:image" content="https://nizamudheen.tech/nizam3.png"/>
     <meta name="twitter:url" content="https://nizamudheen.tech/"/>
     <title>Nizamudheen</title>
       <body>
