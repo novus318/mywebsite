@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Header from '@/Components/Header';
 import Footer from '@/Components/Footer';
 import lettercard from '@/images/lettercard.svg'
-import pencil from '@/images/pencil.svg'
 import { FaEnvelope, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 import { gsap } from 'gsap';
@@ -99,12 +98,6 @@ const Contact = () => {
       scrollTrigger: { trigger: '.letter-image', start: 'top 80%' },
     });
 
-    gsap.from('.pencil-image', {
-      opacity: 0,
-      x: -100,
-      duration: 1.5,
-      scrollTrigger: { trigger: '.pencil-image', start: 'top 80%' },
-    });
     return () => {
         ScrollTrigger.getAll().forEach((trigger) => {
           trigger.kill(true);
@@ -122,9 +115,6 @@ const Contact = () => {
      <Header />
       <section className="bg-white py-14 mt-6 relative">
         <div className="mx-auto overflow-x-hidden">
-          <div className="absolute pencil-image top-36 left-24 z-10 transform -translate-x-1/2 -translate-y-1/2">
-            <img src={pencil.src} alt="Pencil" className="w-1/2 mb-4 pencil-image" />
-          </div>
           <h2 className="heading text-3xl md:text-4xl lg:text-5xl font-bold md:mb-8 text-[#cd6242] text-center">
             Contact Me
           </h2>
