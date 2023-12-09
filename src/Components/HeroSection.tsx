@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import image from '@/images/nizam1.svg';
 import text from '@/images/Text.svg';
-import element from '@/images/Asset1.svg';
 import muhammed from '@/images/Asset2.svg';
 import nizamudheen from '@/images/Asset3.svg';
 import { TypeAnimation } from 'react-type-animation';
@@ -23,21 +22,21 @@ const HeroSection = () => {
     // Animation for Muhammed from left to right
     gsap.fromTo(
       muhammedRef.current,
-      { opacity: 0, x: 100 },
-      { opacity: 1, x: 0, duration: 1, }
+      { opacity: 0.5, x: 90 },
+      { opacity: 1, x: 0, duration: 1.5,repeat: -1, yoyo: true }
     );
 
     // Animation for Nizamudheen from right to left
     gsap.fromTo(
       nizamudheenRef.current,
-      { opacity: 0, x: -100 },
-      { opacity: 1, x: 0, duration: 1, }
+      { opacity: 0.5, x: -100 },
+      { opacity: 1, x: 0, duration: 1.5,repeat: -1, yoyo: true  }
     );
   }, []);
 
   return (
     <section>
-      <div className="bg-white h-[550px] md:h-[530px] lg:h-[760px] mt-2">
+      <div className="bg-white h-[550px] md:h-[530px] lg:h-[760px] mt-2 overflow-hidden">
         <div className="bg-white h-auto md:min-h-[700px] flex flex-col md:flex-row items-center justify-center text-white relative">
           <div className="text-center netflix md:w-1/2 p-5 mt-16 md:p-10">
             <div className='my-auto'>

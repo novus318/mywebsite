@@ -178,11 +178,11 @@ const Contact = () => {
               </div>
               <div className="flex items-center p-4 rounded-lg border border-gray-200 shadow-sm skills" onClick={openLinkedIn}>
                 <span className="text-2xl md:text-3xl lg:text-4xl mr-3 text-[#cd6242]"><FaLinkedin /></span>
-                <p className="text-base md:text-lg font-semibold text-[#233746]">Email</p>
+                <p className="text-base md:text-lg font-semibold text-[#233746]">Linkedin</p>
               </div>
               <div className="flex items-center p-4 rounded-lg border border-gray-200 shadow-sm skills" onClick={openInstagram}>
                 <span className="text-2xl md:text-3xl lg:text-4xl mr-3 text-[#cd6242]"><FaInstagram /></span>
-                <p className="text-base md:text-lg font-semibold text-[#233746]">Email</p>
+                <p className="text-base md:text-lg font-semibold text-[#233746]">Instagram</p>
               </div>
             </div>
           </div>

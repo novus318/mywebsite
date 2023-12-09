@@ -23,7 +23,7 @@ export default function Document() {
 />      
         <meta name="theme-color" content="#cd6242" />
     <meta name="description" content="Self-taught web developer,creates innovative solutions for the web and skilled to build both the frontend and backend components of a web application."/>
-    <meta name="keywords" content="nizamudheen,muhammed nizamudheen,muhammed nizamudheen m,web developer,web development,software,software developer,software engineer,mern stack,react,full-stack"/>
+    <meta name="keywords" content="nizamudheen,muhammed nizamudheen,muhammed nizamudheen m,web developer,web development,software,software developer,software engineer,mern stack,react,full-stack,Best freelance web designer, Web Designer Near me, freelance web designer in Gurgaon, Best freelance web designer in Delhi, freelance web developer, freelance website developers in Gurgaon, freelance website developers in delhi"/>
     <meta name="author" content="Muhammed Nizamudheen M"/>
     <meta property="og:title" content="Nizamudheen"/>
     <meta property="og:description" content="Self-taught web developer, creates innovative solutions for the web and skilled to build both the frontend and backend components of a web application."/>
