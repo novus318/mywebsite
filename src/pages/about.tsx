@@ -62,6 +62,22 @@ const education = [
 
 const experience = [
     {
+        position: 'Software Developer',
+        company: 'DesGro Creatives (UAE)',
+        year: '2023',
+        details: [
+            'Collaborate with cross-functional teams to analyze project requirements and design efficient software solutions.',
+            'Develop, test, and deploy high-quality code in accordance with best practices.',
+            'Participate in code reviews, providing constructive feedback to enhance team performance.',
+            'Troubleshoot, debug, and resolve software defects and issues promptly.',
+            'Stay current with industry trends and incorporate emerging technologies to improve software development processes.',
+            'Collaborate with product managers and UX/UI designers to create seamless, user-friendly applications.'
+        ],
+        website: 'desgrocreatives.com',
+        webUrl:'https://www.desgrocreatives.com/',
+        icon: <FaBriefcase />,
+    },
+    {
         position: 'Freelancer',
         company: 'Abyzplants (UAE)',
         year: '2023',
