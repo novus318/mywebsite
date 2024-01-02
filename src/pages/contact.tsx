@@ -107,9 +107,9 @@ const Contact = () => {
   return (
     <>
      <Layout
-      title="Nizamudheen - Connect Me"
+      title="Muhammed Nizamudheen M | Software developer - Connect Me"
       description="Self-taught web developer,creates innovative solutions for the web and skilled to build both the frontend and backend components of a web application."
-      keywords="Muhammed Nizamudheen,,nizam,kannur,Nizamudheen,nizamudheen m,skills,Muhammed Nizamudheen m,web developer,web development,contact,software,software engineer,web design,website design,website builder,web designer,ecommerce website,website creator,responsive web design,web development company,best website,web design software,build a website,web developer salary,design website,website layout,web application development,JavaScript,Node.js,Full-Stack Development,Git,Front-end Development,Back-End Web Development"
+      keywords="Muhammed Nizamudheen,desgro creatives,uae,dubai,sharjah,abu dhabi,website designer dubai,website creator uae,build a website uae,how to design a website in uae,nizam,kannur,Nizamudheen,nizamudheen m,skills,Muhammed Nizamudheen m,web developer,web development,contact,software,software engineer,web design,website design,website builder,web designer,ecommerce website,website creator,responsive web design,web development company,best website,web design software,build a website,web developer salary,design website,website layout,web application development,JavaScript,Node.js,Full-Stack Development,Git,Front-end Development,Back-End Web Development"
       author="Muhammed Nizamudheen M"
       canonicalUrl="https://nizamudheen.tech/">
      <Header />

@@ -44,7 +44,7 @@ const Layout: React.FC<LayoutProps> = ({
 };
 
 Layout.defaultProps = {
-    title:'Nizamudheen',
+    title:'Nizamudheen M - Web Developer',
     description:'Self-taught web developer,creates innovative solutions for the web and skilled to build both the frontend and backend components of a web application.',
     keywords:'nizamudheen,Muhammed Nizamudheen,web developer,web development,software,software engineer',
     author:'Muhammed Nizamudheen M',
