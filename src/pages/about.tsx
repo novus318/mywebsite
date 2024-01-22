@@ -63,7 +63,7 @@ const education = [
 const experience = [
     {
         position: 'Software Developer',
-        company: 'DesGro Creatives (UAE)',
+        company: 'Winndeal (UAE)',
         year: '2023',
         details: [
             'Collaborate with cross-functional teams to analyze project requirements and design efficient software solutions.',
@@ -73,8 +73,8 @@ const experience = [
             'Stay current with industry trends and incorporate emerging technologies to improve software development processes.',
             'Collaborate with product managers and UX/UI designers to create seamless, user-friendly applications.'
         ],
-        website: 'desgrocreatives.com',
-        webUrl:'https://www.desgrocreatives.com/',
+        website: 'winndeal.com',
+        webUrl:'https://www.winndeal.com/',
         icon: <FaBriefcase />,
     },
     {
@@ -132,7 +132,7 @@ const About = () => {
             <Layout
             title="Nizamudheen - About"
             description="Self-taught web developer,creates innovative solutions for the web and skilled to build both the frontend and backend components of a web application."
-            keywords="Muhammed Nizamudheen,nizamudheen,desgro,desgro creatives,nizam,kannur,Nizamudheen,nizamudheen m,web application development,uae,Dubai,abu dhabi,sharjah,Muhammed Nizamudheen m,web developer,web development,software,software engineer,web design,website design,website builder,web designer,ecommerce website,website creator,responsive web design,web development company,best website,web design software,build a website,web developer salary,design website,website layout,web application development,JavaScript,Node.js,Full-Stack Development,Git,Front-end Development,Back-End Web Development,freelance web designer kerala,seo freelancers in kerala,freelance web designer in kerala,hire freelancer website designer keralafreelance web design kerala,freelance seo kerala,logo designer kerala,web developer kerala,web design company in kerala,seo company in kerala,web design,web design company,freelance web designer,web development in kerala,web developer in uae,freelance web design,seo dubai,seo service,seo freelancers,seo company,seo,seo dubai,desgro creatives dubai,software developer in uae"
+            keywords="Muhammed Nizamudheen,nizamudheen,nizam,kannur,Nizamudheen,nizamudheen m,web application development,uae,Dubai,abu dhabi,sharjah,Muhammed Nizamudheen m,web developer,web development,software,software engineer,web design,website design,website builder,web designer,ecommerce website,website creator,responsive web design,web development company,best website,web design software,build a website,web developer salary,design website,website layout,web application development,JavaScript,Node.js,Full-Stack Development,Git,Front-end Development,Back-End Web Development,freelance web designer kerala,seo freelancers in kerala,freelance web designer in kerala,hire freelancer website designer keralafreelance web design kerala,freelance seo kerala,logo designer kerala,web developer kerala,web design company in kerala,seo company in kerala,web design,web design company,freelance web designer,web development in kerala,web developer in uae,freelance web design,seo dubai,seo service,seo freelancers,seo company,seo,seo dubai, creatives dubai,software developer in uae"
             author="Muhammed Nizamudheen M"
             canonicalUrl="https://nizamudheen.tech/">
             <Header />
