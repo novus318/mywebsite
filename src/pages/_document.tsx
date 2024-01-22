@@ -28,10 +28,7 @@ export default function Document() {
           sizes="32x22"
           href="/logo.webp"
         />
-          <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-/>      
+       
         <meta name="theme-color" content="#cd6242" />
     <meta name="description" content="Self-taught web developer,creates innovative solutions for the web and skilled to build both the frontend and backend components of a web application."/>
     <meta name="keywords" content="nizamudheen,muhammed nizamudheen,muhammed nizamudheen m,web developer,web development,software,software developer,software engineer,mern stack,react,full-stack,Best freelance web designer, Web Designer Near me, freelance web designer in Gurgaon, Best freelance web designer in Delhi, freelance web developer, freelance website developers in Gurgaon, freelance website developers in delhi"/>
@@ -40,6 +37,7 @@ export default function Document() {
     <meta property="og:description" content="Self-taught web developer, creates innovative solutions for the web and skilled to build both the frontend and backend components of a web application."/>
     <meta property="og:url" content="https://nizamudheen.tech/"/>
     <meta property="og:image" content="https://nizamudheen.tech/nizam3.png"/>
+    <meta name="twitter:card" content="https://nizamudheen.tech/nizam3.png" />
     <meta property="og:type" content="website"/>
 
     <meta name="twitter:title" content="Nizamudheen"/>
@@ -60,7 +58,6 @@ export default function Document() {
           {/* End Google Tag Manager (noscript) */}
         <Main />
         <NextScript />
-        <script src="https://cdn.tailwindcss.com" async/>
       </body>
     </Html>
   )
