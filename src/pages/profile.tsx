@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiOutlineMail, AiOutlinePhone, AiOutlineGlobal, AiOutlineGithub, AiOutlineLinkedin, AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai';
-
+import Contacts from 'react-native-contacts';
 
 
 const ContactCard: React.FC = () => {
@@ -10,25 +10,15 @@ const ContactCard: React.FC = () => {
   };
  
   const handleAddToContacts = () => {
-    const vcardData = `
-      BEGIN:VCARD
-      VERSION:3.0
-      FN:Muhammed Nizamudheen
-      EMAIL:nizam@winndeal.com
-      TEL:+971569367867
-      URL:nizamudheen.tech
-      END:VCARD
-    `;
+    const newContact = {
+      emailAddresses: [{ label: 'work', email: 'nizam@winndeal.com' }],
+      familyName: 'Nizamudheen',
+      givenName: 'Muhammed',
+      phoneNumbers: [{ label: 'work', number: '+971569367867' }],
+      websiteAddresses: ['nizamudheen.tech'],
+    };
 
-    const blob = new Blob([vcardData], { type: 'text/vcard' });
-    const url = window.URL.createObjectURL(blob);
-
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'contact.vcf';
-    document.body.appendChild(a);
-    a.click();
-    window.URL.revokeObjectURL(url);
+    Contacts.addContact(newContact);
   };
 
     
