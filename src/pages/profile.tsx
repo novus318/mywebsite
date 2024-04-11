@@ -8,10 +8,33 @@ const ContactCard: React.FC = () => {
   
     window.location.href = `https://wa.me/${phoneNumber}`;
   };
-  
+ 
+  const handleAddToContacts = () => {
+    const vcardData = `
+      BEGIN:VCARD
+      VERSION:3.0
+      FN:Muhammed Nizamudheen
+      EMAIL:nizam@winndeal.com
+      TEL:+971569367867
+      URL:nizamudheen.tech
+      END:VCARD
+    `;
+
+    const blob = new Blob([vcardData], { type: 'text/vcard' });
+    const url = window.URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'contact.vcf';
+    document.body.appendChild(a);
+    a.click();
+    window.URL.revokeObjectURL(url);
+  };
+
     
   return (
-    <div className="rounded-lg border bg-card text-card-foreground shadow-sm w-full max-w-3xl mx-auto mt-5" data-v0-t="card">
+   <div className='px-4'>
+     <div className=" rounded-lg border bg-card text-card-foreground shadow-sm w-full max-w-3xl mx-auto mt-5" data-v0-t="card">
       <div className="flex flex-col p-6 space-y-2">
       <div className="flex justify-between space-x-4">
         <div className="flex items-center">
@@ -34,7 +57,9 @@ const ContactCard: React.FC = () => {
           Message
         </button>
       </div>
-      <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+      <button
+      onClick={handleAddToContacts}
+       className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
         Add to Contacts
       </button>
     </div>
@@ -73,6 +98,7 @@ const ContactCard: React.FC = () => {
       </div>
     </div>
     </div>
+   </div>
   );
 };
 

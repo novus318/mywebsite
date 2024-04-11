@@ -7,7 +7,7 @@ const Footer = () => {
   const emailAddress = 'nizamudheen.tech@gmail.com';
 
   return (
-    <footer className="bg-[#233746] text-white py-4">
+    <footer className="bg-[#17242e] bg-opacity-70 text-white py-4 rounded-2xl my-4 mx-5 md:mx-8 lg:mx-36">
       <div className="container mx-auto flex flex-col items-center">
        <div className='text-center px-4 tool'>
        <h2 className="text-lg font-semibold md:text-2xl tracking-widest">DECLARATION</h2>

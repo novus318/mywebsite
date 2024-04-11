@@ -21,12 +21,13 @@ import framer from '@/images/framer-motion.svg'
 import gsapsvg from '@/images/gsap-greensock.svg'
 import tailwind from '@/images/tailwind-svgrepo-com.svg'
 import typescript from '@/images/typescript-svgrepo-com.svg'
+import { useGSAP } from '@gsap/react';
 
 gsap.registerPlugin(ScrollTrigger);
 const Ido = () => {
   const idoRef = useRef(null);
 
-  useEffect(() => {
+  useGSAP(() => {
     gsap.fromTo(
       idoRef.current,
       { opacity: 0, y: 20 },
