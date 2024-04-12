@@ -9,51 +9,9 @@ const ContactCard: React.FC = () => {
   };
 
   const handleAddToContacts = () => {
-    // Encode the image as Base64
-    const imageUrl = '/profile.jpeg'; // URL of the image
-    fetch(imageUrl)
-      .then(response => response.blob())
-      .then(blob => {
-        const reader = new FileReader();
-        reader.onloadend = () => {
-          const imageData = reader.result?.toString().split(',')[1]; // Extracting Base64 data
-          if (imageData) {
-            const vCardContent = `BEGIN:VCARD
-VERSION:3.0
-PRODID:ez-vcard 0.11.0
-N:Muhammed Nizamudheen
-TITLE:Software Developer
-ORG:WINNDEAL
-TEL;TYPE=cell:+971569367867
-EMAIL;TYPE=home:nizam@winndeal.com
-URL;TYPE=LinkedIn:https://www.linkedin.com/in/muhammednizamudheen/
-URL;TYPE=Instagram:http://instagram.com/n_i_zam___
-URL;TYPE=WhatsApp:https://wa.me/+971569367867
-URL;TYPE=Website:www.nizamudheen.tech
-PHOTO;ENCODING=b;TYPE=JPEG:${imageData}
-END:VCARD`;
+    window.open('/nizam.vcf', '_blank');
+  };  
 
-            // Create a Blob containing the vCard content
-            const vCardBlob = new Blob([vCardContent], { type: 'text/vcard' });
-
-            // Create a URL for the Blob
-            const vCardUrl = URL.createObjectURL(vCardBlob);
-
-            // Open the vCard in a new tab
-            window.open(vCardUrl, '_blank');
-
-            // Clean up
-            URL.revokeObjectURL(vCardUrl);
-          } else {
-            console.error('Error decoding image data.');
-          }
-        };
-        reader.readAsDataURL(blob);
-      })
-      .catch(error => {
-        console.error('Error fetching or encoding image:', error);
-      });
-  };
 
     
   return (
