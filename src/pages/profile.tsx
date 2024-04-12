@@ -8,18 +8,11 @@ const ContactCard: React.FC = () => {
   
     window.location.href = `https://wa.me/${phoneNumber}`;
   };
- 
-  const handleAddToContacts = () => {
-    const newContact = {
-      emailAddresses: [{ label: 'work', email: 'nizam@winndeal.com' }],
-      familyName: 'Nizamudheen',
-      givenName: 'Muhammed',
-      phoneNumbers: [{ label: 'work', number: '+971569367867' }],
-      websiteAddresses: ['nizamudheen.tech'],
-    };
 
-    Contacts.addContact(newContact);
-  };
+  const handleAddToContacts = () => {
+    window.open('/nizam.vcf', '_blank');
+  };  
+
 
     
   return (
