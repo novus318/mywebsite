@@ -1,6 +1,5 @@
 import React from 'react';
 import { AiOutlineMail, AiOutlinePhone, AiOutlineGlobal, AiOutlineGithub, AiOutlineLinkedin, AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai';
-import Contacts from 'react-native-contacts';
 
 
 const ContactCard: React.FC = () => {
