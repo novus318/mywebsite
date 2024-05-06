@@ -18,10 +18,10 @@ const InWord = () => {
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold md:mb-4">In Words</h2>
         <div>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl md:mb-4 font-light">
-            As a self-directed web developer, I am passionate about creating innovative solutions for the web. I bring a creative mindset to every project I undertake, possessing the skills to build both the frontend and backend components of a web application.
+            As a self-directed developer, I am passionate about creating customised solutions for my client. I bring a creative mindset to every project I undertake, with possessing the skills to build both the frontend and backend components of a web application including deployment.
           </p>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl">
-            Experienced in both frontend and backend development, committed to creating innovative solutions.
+            Experienced in both frontend and backend development, committed to creating custom solutions.
           </p>
         </div>
       </div>
