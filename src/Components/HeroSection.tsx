@@ -29,9 +29,9 @@ const HeroSection = () => {
 
   return (
     <section className='px-10 md:px-48 lg:px-72'>
-      <div className="flex py-14 mt-16 bg-white">
+      <div className="flex py-10 mt-16 bg-[#ffffff]">
         <div className="text-left">
-          <h1 className="text-5xl md:text-6xl lg:text-8xl font-extrabold text-[#2337464a] mb-3">Muhammed</h1>
+          <h1 className="text-5xl md:text-6xl lg:text-8xl font-extrabold text-[#2337469a] mb-3">Muhammed</h1>
           <h1 className="text-5xl md:text-6xl lg:text-8xl font-extrabold text-[#233746]">Nizamudheen.</h1>
           <p className="text-xl md:text-2xl lg:text-4xl mt-4 md:mt-6 lg:mt-8 tracking-wide text-[#cd6242]">Software Developer.</p>
         </div>

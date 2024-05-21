@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { AiOutlineMail, AiOutlinePhone, AiOutlineGlobal, AiOutlineGithub, AiOutlineLinkedin, AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai';
 
@@ -47,22 +48,24 @@ const ContactCard: React.FC = () => {
     </div>
     <div className="p-6 grid gap-4 text-sm">
         <div className="space-y-1.5">
-          <label className="text-sm flex gap-3 font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" htmlFor="email">
+          <label className="text-sm pb-2 flex gap-3 font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" htmlFor="email">
             <AiOutlineMail /> Email
           </label>
-          <div className="font-medium">nizam@winndeal.com</div>
+          <Link href='mailto:nizam@winndeal.com' className="font-medium">nizam@winndeal.com</Link>
         </div>
         <div className="space-y-1.5">
-          <label className="text-sm flex gap-3 font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" htmlFor="phone">
+          <label className="text-sm pb-2 flex gap-3 font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" htmlFor="phone">
             <AiOutlinePhone /> Phone
           </label>
-          <div className="font-medium">+971 56 936 7867</div>
+          <Link href='tel:+971569367867' className="font-medium">+971 56 936 7867</Link>
+          <br/>
+          <Link href='tel:+917560845014' className="font-medium">+91 7560845014</Link>
         </div>
       <div className="space-y-1.5">
-        <label className="text-sm flex gap-3 font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" htmlFor="website">
+        <label className="text-sm pb-2 flex gap-3 font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" htmlFor="website">
           <AiOutlineGlobal /> Website
         </label>
-        <div className="font-medium">nizamudheen.tech</div>
+        <Link href='https://www.nizamudheen.tech/' className="font-medium">www.nizamudheen.tech</Link>
       </div>
       <div className="flex space-x-4">
         <a href="https://github.com/novus318" target="_blank" rel="noopener noreferrer">

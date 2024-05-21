@@ -17,7 +17,7 @@ const Footer = () => {
        </div>
        <h3 className="text-center text-base mb-2 font-medium md:text-xl tracking-wider uppercase">Connect me</h3>
         <div className="flex space-x-4">
-          <button
+          <button aria-label='Whatsapp'
             className="hover:text-[#cd6242] transition duration-300"
             onClick={() => {
               window.open(`https://wa.me/${phoneNumber}`, '_blank');
@@ -25,7 +25,7 @@ const Footer = () => {
           >
             <FaWhatsapp size={32} />
           </button>
-          <button
+          <button aria-label='Email'
             className="hover:text-[#cd6242] transition duration-300"
             onClick={() => {
               window.open(`mailto:${emailAddress}`, '_blank');
@@ -33,7 +33,7 @@ const Footer = () => {
           >
             <FaEnvelope size={32} />
           </button>
-          <button
+          <button aria-label='Linkedin'
             className="hover:text-[#cd6242] transition duration-300"
             onClick={() => {
               window.open('https://www.linkedin.com/in/muhammednizamudheen', '_blank');
@@ -41,7 +41,7 @@ const Footer = () => {
           >
             <FaLinkedin size={32} />
           </button>
-          <button
+          <button aria-label='Github'
             className="hover:text-[#cd6242] transition duration-300"
             onClick={() => {
               window.open('https://github.com/novus318', '_blank');
@@ -49,7 +49,7 @@ const Footer = () => {
           >
             <FaGithub size={32} />
           </button>
-          <button
+          <button name='Instagram'
             className="hover:text-[#cd6242] transition duration-300"
             onClick={() => {
               window.open(
