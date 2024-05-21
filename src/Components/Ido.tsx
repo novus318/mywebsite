@@ -98,7 +98,7 @@ const brandImages2 = [gsapsvg,firebase, Aws, Digital, Git,framer];
   return (
     <section className="bg-white py-14">
       <div ref={idoRef} className="container mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-[#cd6242]">What I Do</h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-[#cd6242]">What I Do</h2>
         <div className="flex flex-col md:flex-row mt-4 md:justify-center">
           <div className="mb-8 md:mb-0w-11/12 md:w-1/2 lg:w-5/12 mt-4 md:mt-0 md:mr-4 overflow-hidden">
             <Slider {...settings}>
@@ -125,9 +125,9 @@ const brandImages2 = [gsapsvg,firebase, Aws, Digital, Git,framer];
             </Slider>
           </div>
           <div className="w-full md:w-2/3 lg:w-1/2 mt-4 md:mt-0 text-left mx-auto px-4">
-  <h4 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#233746]">
+  <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#233746]">
   I Specialize In
-  </h4>
+  </h3>
   <ul className="list-disc md:text-base mb-6 text-[#233746] px-5">
     <li className="mb-2 animate-fade-in">
       Bringing ideas to life using Next.js, TypeScript, and JavaScript. Crafting engaging user interfaces and responsive designs with Tailwind CSS.
@@ -151,7 +151,7 @@ const brandImages2 = [gsapsvg,firebase, Aws, Digital, Git,framer];
       Database management with MongoDB for efficient data storage and retrieval.
     </li>
   </ul>
-  <p className="mb-8 text-[#233746] md:text-lg text-center font-medium animate-fade-in-last">
+  <p className="mb-8 text-[#233746] md:text-lg text-center font-medium">
     From concept to deployment, I provide end-to-end development solutions by analyzing problems and enhancing user experiences.
   </p>
 </div>

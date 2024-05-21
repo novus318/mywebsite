@@ -51,12 +51,11 @@ const Header = () => {
         </Link>
         <nav className={`hidden md:flex items-center gap-10 ${isMenuOpen ? 'hidden' : ''} canno tracking-widest menu-items`}>
           <Link href="/" className="text-[#233746] hover:text-[#cd6242] text-xl">Home</Link>
-          <Link href="/about" className="text-[#233746] hover:text-[#cd6242] text-xl">About</Link>
+          <Link href="#about" className="text-[#233746] hover:text-[#cd6242] text-xl">About</Link>
           <Link href="/projects" className="text-[#] hover:text-[#cd6242] text-xl">Projects</Link>
-          <Link href="/contact" className="text-[#233746] hover:text-[#cd6242] text-xl">Connect me</Link>
-          <button onClick={downloadResume} className="text-white bg-[#cd6242] hover:bg-[#233746db] hover-bg-[#233746db]  mb-2 rounded-full px-5 py-2 text-lg">Resume</button>
+          <button aria-label='Resume' onClick={downloadResume} className="text-white bg-[#cd6242] hover:bg-[#233746db] hover-bg-[#233746db]  mb-2 rounded-full px-5 py-2 text-lg">Resume</button>
         </nav>
-        <button
+        <button aria-label='toggle'
           className="text-white bg-[#cd6242] hover:bg-[#233746] py-2 px-4 rounded-full md:hidden"
           onClick={toggleMenu}
         >
@@ -66,9 +65,8 @@ const Header = () => {
       {isMenuOpen && (
         <nav className="md:hidden mt-3 p-2 canno menu-items">
           <Link href="/" className="text-[#233746db] hover:text-[#cd6242] block mb-2 text-lg tracking-wider font-medium">Home</Link>
-          <Link href="/about" className="text-[#233746db] hover:text-[#cd6242] block mb-2 text-lg tracking-wider font-medium">About</Link>
+          <Link href="#about" className="text-[#233746db] hover:text-[#cd6242] block mb-2 text-lg tracking-wider font-medium">About</Link>
           <Link href="/projects" className="text-[#233746db] hover:text-[#cd6242] block mb-2 text-lg tracking-wider font-medium">Projects</Link>
-          <Link href="/contact" className="text-[#233746db] hover:text-[#cd6242] block mb-2 text-lg tracking-wider font-medium">Connect me</Link>
           <button onClick={downloadResume} className="text-white bg-[#cd6242] hover:bg-[#233746db] hover-bg-[#233746db]  mb-2 rounded-full px-5 py-2 text-base">Resume</button>
         </nav>
       )}

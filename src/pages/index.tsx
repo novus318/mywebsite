@@ -4,6 +4,7 @@ import HeroSection from "@/Components/HeroSection";
 import Ido from "@/Components/Ido";
 import InWord from "@/Components/InWord";
 import Layout from "@/Components/Layout";
+import About from "@/Components/About";
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
    <HeroSection/>
    <InWord/>
    <Ido/>
+   <About/>
    <Footer/>
    </Layout>
    </>

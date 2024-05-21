@@ -1,11 +1,8 @@
-import Footer from '@/Components/Footer';
-import Header from '@/Components/Header';
 import { FaGraduationCap, FaCode, FaLaptopCode, FaBriefcase, FaDatabase } from 'react-icons/fa';
 import { SiReact, SiMongodb, SiCss3, SiTailwindcss, SiGit, SiBootstrap, SiRedux, SiNodedotjs, SiNextdotjs, SiExpress, SiJavascript, SiAmazonaws } from 'react-icons/si';
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import Layout from '@/Components/Layout';
 
 const skills = [
     { name: 'JavaScript', icon: <SiJavascript /> },
@@ -64,7 +61,7 @@ const experience = [
     {
         position: 'Software Developer',
         company: 'Winndeal (UAE)',
-        year: '2023',
+        year: 'Mar 2023 - present',
         details: [
             'Collaborate with cross-functional teams to analyze project requirements and design efficient software solutions.',
             'Develop, test, and deploy high-quality code in accordance with best practices.',
@@ -92,20 +89,6 @@ const experience = [
         webUrl:'https://www.abyzplants.com/',
         icon: <FaBriefcase />,
     },
-    {
-        position: 'Freelancer',
-        company: 'Winndeal (UAE)',
-        year: '2023',
-        details: [
-            'Crafted a project for Winndeal-IT Solutions in UAE.',
-            'Completed the project successfully within the specified timeframe.',
-            'Developed and delivered a quality solution.',
-            'Utilized Next JS and Typescript to enhance project functionality and achieve optimal results & achieve the objectives of project.',
-        ],
-        website: 'winndeal.com',
-        webUrl:'https://winndeal.com/',
-        icon: <FaBriefcase />,
-    },
 ];
 gsap.registerPlugin(ScrollTrigger);
 const About = () => {
@@ -129,18 +112,10 @@ const About = () => {
       }, []);
     return (
         <>
-            <Layout
-            title="Nizamudheen - About"
-            description="Self-taught web developer,creates innovative solutions for the web and skilled to build both the frontend and backend components of a web application."
-            keywords="Muhammed Nizamudheen,nizamudheen,nizam,kannur,Nizamudheen,nizamudheen m,web application development,uae,Dubai,abu dhabi,sharjah,Muhammed Nizamudheen m,web developer,web development,software,software engineer,web design,website design,website builder,web designer,ecommerce website,website creator,responsive web design,web development company,best website,web design software,build a website,web developer salary,design website,website layout,web application development,JavaScript,Node.js,Full-Stack Development,Git,Front-end Development,Back-End Web Development,freelance web designer kerala,seo freelancers in kerala,freelance web designer in kerala,hire freelancer website designer keralafreelance web design kerala,freelance seo kerala,logo designer kerala,web developer kerala,web design company in kerala,seo company in kerala,web design,web design company,freelance web designer,web development in kerala,web developer in uae,freelance web design,seo dubai,seo service,seo freelancers,seo company,seo,seo dubai, creatives dubai,software developer in uae"
-            author="Muhammed Nizamudheen M"
-            canonicalUrl="https://nizamudheen.tech/">
-            <Header />
-            <section className="bg-white py-14 mt-6">
+            <section id='about' className="bg-white">
                 <div className="mx-auto">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-[#cd6242] text-center">About Me</h2>
-                    <div className="mb-8 px-4 md:px-10">
-                        <h4 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-[#233746] heading">Skills</h4>
+                    <div className="mb-8 px-4 md:px-32">
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-[#233746] heading">Skills</h2>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 skills">
                             {skills.map((skill, index) => (
                                 <div key={index} className="flex items-center p-4 rounded-lg border border-gray-200 shadow-sm skills">
@@ -150,21 +125,21 @@ const About = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="mb-8 px-4 md:px-10">
-                        <h4 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-[#233746] heading">Education</h4>
+                    <div className="mb-8 px-4 md:px-32">
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-[#233746] heading">Education</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 educations">
                             {education.map((edu, index) => (
                                 <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md transform transition-transform hover:shadow-lg educations">
                                     <div className="bg-[#cd6242] p-3 text-white text-center">
-                                        <span className="text-3xl md:text-4xl lg:text-5xl">{edu.icon}</span>
+                                        <span className="text-xl md:text-2xl">{edu.icon}</span>
                                     </div>
                                     <div className="p-4 md:p-6">
-                                        <p className="text-lg md:text-xl lg:text-2xl font-bold text-[#233746] mb-1">{edu.degree}</p>
-                                        <p className="text-base md:text-lg lg:text-base text-[#233746] mb-1">{edu.institution}</p>
-                                        <p className="text-base md:text-lg lg:text-base text-[#233746] mb-2">{edu.duration}</p>
+                                        <p className="text-sm md:text-xl font-bold text-[#233746] mb-1">{edu.degree}</p>
+                                        <p className="text-xs md:text-base text-[#233746] mb-1">{edu.institution}</p>
+                                        <p className="text-xs md:text-base text-[#233746] mb-2">{edu.duration}</p>
                                         <ul className="list-disc text-[#233746]">
                                             {edu.details.map((d, idx) => (
-                                                <li key={idx} className="mb-1 text-[15px] md:text-[16px] lg:text-[17px]">{d}</li>
+                                                <li key={idx} className="mb-1 text-xs md:text-sm">{d}</li>
                                             ))}
                                         </ul>
                                     </div>
@@ -172,8 +147,8 @@ const About = () => {
                             ))}
                         </div>
                     </div>
-                    <div className='mx-auto px-4 md:px-10'>
-                        <h4 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-[#233746] heading">Technical experience</h4>
+                    <div className='mx-auto px-4 md:px-32'>
+                        <h3 className="text-2xl md:text-3xl font-bold mb-6 text-[#233746] heading">Technical experience</h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 experience">
                             {experience.map((exp, index) => (
                                 <div key={index} className="bg-white p-6 rounded-lg shadow-md experience">
@@ -181,13 +156,13 @@ const About = () => {
                                         <span className="text-4xl text-[#cd6242]">{exp.icon}</span>
                                         <div className="ml-4">
                                             <p className="text-xl md:text-2xl lg:text-3xl font-bold text-[#233746] mb-1">{exp.position}</p>
-                                            <p className="text-base md:text-lg lg:text-base text-[#233746]">{exp.company}</p>
-                                            <p className="text-base md:text-lg lg:text-base text-[#233746]">{exp.year}</p>
+                                            <p className="text-xs md:text-base text-[#233746]">{exp.company}</p>
+                                            <p className="text-xs md:text-base text-[#233746]">{exp.year}</p>
                                         </div>
                                     </div>
                                     <ul className="list-disc text-[#233746] mb-4">
                                         {exp.details.map((detail, idx) => (
-                                            <li key={idx} className="mb-1">{detail}</li>
+                                            <li key={idx} className="mb-1 text-xs">{detail}</li>
                                         ))}
                                     </ul>
                                     <p className="text-base md:text-lg lg:text-base text-[#233746]">
@@ -200,8 +175,6 @@ const About = () => {
 
                 </div>
             </section>
-            <Footer />
-            </Layout>
         </>
     );
 };
